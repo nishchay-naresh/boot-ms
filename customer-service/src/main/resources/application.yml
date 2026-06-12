@@ -13,17 +13,8 @@ spring:
     username: sa
     password:
 
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-
   #  enabling the H2 console
   h2:
     console:
       enabled: true
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8040/eureka
-  instance:
-    prefer-ip-address: true
