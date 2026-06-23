@@ -1,25 +1,5 @@
 # boot-ms
 
-It contains a service registry (Eureka), several independent microservices (customer, product, menu) and a reactive client that calls services via a load-balanced reactive WebClient.
-Product and Customer services use in-memory H2 databases and JPA for simple CRUD-style persistence.
-
-Minimal Spring Boot microservices demo (updated to Java 17 and Spring Boot 4.1.0).
-
-This repository contains several small services demonstrating service discovery, REST, reactive clients and simple JPA/H2 persistence.
-
-Services (local ports)
-- service-registry — Eureka server (8040)
-- customer-service — JPA + H2 (4040)
-- product-service — JPA + H2 (4050)
-- menu-service — Actuator-enabled service (4060)
-- reactive-client — WebFlux client using load-balanced WebClient (4070)
-
-Tech
-- Java 17
-- Spring Boot 4.1.0
-- Spring Cloud (updated to 2024.0.0 where used)
-# boot-ms
-
 This repository contains a small Spring Boot microservices demo: a service registry (Eureka), several independent microservices (customer, product, menu) and a reactive client that calls services via a load-balanced WebClient. Product and Customer services use in-memory H2 databases and JPA for simple CRUD-style persistence.
 
 Tech stack
