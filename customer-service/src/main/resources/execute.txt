@@ -125,7 +125,6 @@ o/p =>
 ====================================================
 
 -------free api(no security) to consume-------------
-https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
 https://api.nationalize.io/?name=andrew
 https://api.agify.io/?name=kevin
