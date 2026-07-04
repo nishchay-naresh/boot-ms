@@ -15,9 +15,9 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @GetMapping(path = "/api/test")
+    @GetMapping(path = "/api/status")
     private String method() {
-        return "test";
+        return "Up And Running ..!!";
     }
 
     //creating a get mapping that retrieves all Customer details
