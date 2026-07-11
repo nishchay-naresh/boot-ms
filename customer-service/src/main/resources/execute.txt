@@ -1,13 +1,16 @@
 
 h2-console
 http://localhost:4040/h2-console
-no pwd needed
+
+drive - org.h2.Driver
+hdbc url - jdbc:h2:mem:customers_data
+username / pwd - sa/no pwd needed
 connect
 
 sql - SELECT * FROM CUSTOMER;
 
-local host : SYNBLRLTC0ZD303.synechron.com
------------------CUSTOMER--------------------
+Can cross-check the details from application.properties
+-------------------------------CUSTOMER-----------------------------------------
 GET
 http://localhost:4040/api/test
 
@@ -128,3 +131,9 @@ o/p =>
 
 https://api.nationalize.io/?name=andrew
 https://api.agify.io/?name=kevin
+
+======================================================
+After service Registry invoke the service with registered url
+
+GET, http://customer-service/api/v1/customers - using RestTemplate, wrappign it under soem other service
+
