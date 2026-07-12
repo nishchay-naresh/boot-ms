@@ -1,15 +1,18 @@
 
 
 
-local host : SYNBLRLTC0ZD303.synechron.com
-
------------------Actuator--------------------
 
 
 GET	http://localhost:4060/menu/south
+        Idly, Dosa
+http://localhost:4060/menu/north
+        Poha, Dhokla
+
 GET	http://localhost:4060/menu/etc
+        Poha, Dhokla
 
 
+-----------------Actuator--------------------
 GET	http://localhost:4060/actuator
 
 GET	http://localhost:4060/actuator/beans

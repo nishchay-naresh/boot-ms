@@ -31,3 +31,4 @@ management:
   #Endpoint is used to shut down the Spring Boot application
   shutdown:
       enabled: true
+
