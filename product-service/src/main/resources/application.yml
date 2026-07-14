@@ -21,3 +21,9 @@ spring:
     console:
       enabled: true
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8040/eureka/
+    fetch-registry: true
+    register-with-eureka: true

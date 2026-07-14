@@ -1,10 +1,13 @@
+
 h2-console
 http://localhost:4050/h2-console
-url: jdbc:h2:mem:product_data
-no pwd needed
+
+drive - org.h2.Driver
+hdbc url - jdbc:h2:mem:product_data
+username / pwd - sa/no pwd needed
 connect
 
-sql - SELECT * FROM CUSTOMER;
+sql - SELECT * FROM PRODUCT;
 
 -----------------CUSTOMER--------------------
 
