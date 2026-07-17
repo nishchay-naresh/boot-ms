@@ -1,0 +1,43 @@
+
+On Server - One need to add spring cloud version + eureka-server dependency
+    <!-- Spring Cloud version required for eureka-server dependency -->
+    <spring-cloud.version>2025.0.0</spring-cloud.version>
+
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+    </dependency>
+
+ Add this in - application.yml
+ eureka:
+   client:
+     service-url:
+       defaultZone: http://localhost:8040/eureka/
+     fetch-registry: false
+     register-with-eureka: false
+
+------------------
+
+On Client - One need to add spring cloud version + eureka-server dependency
+    <!-- Spring Cloud version required for eureka-server dependency -->
+    <spring-cloud.version>2025.0.0</spring-cloud.version>
+
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+    Add this in - application.yml
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://localhost:8040/eureka/
+        fetch-registry: true
+        register-with-eureka: true
+
+=================================================================
+eureka-console
+http://localhost:8040/
+no pwd needed
+connect
+
