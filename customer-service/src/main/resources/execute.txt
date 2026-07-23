@@ -12,7 +12,7 @@ sql - SELECT * FROM CUSTOMER;
 Can cross-check the details from application.properties
 -------------------------------CUSTOMER-----------------------------------------
 GET
-http://localhost:4040/api/test
+http://localhost:4040/api/status
 
 GET
 http://localhost:4040/api/v1/customers
